@@ -1,0 +1,6 @@
+design/*
+*.xd
+.DS_Store
+.prettierignore
+README-template.*
+style-guide.*

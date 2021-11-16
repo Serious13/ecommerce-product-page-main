@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet/less" type="text/css" href="./less/styles.less">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;800&display=swap" rel="stylesheet">
+  <title>E-commerce product page</title>
+</head>
+<body>
+  <header>
+    <div class="header__logo">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <use href="./images/logo.svg#logo"></use>
+      </svg>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Collections</a></li>
+        <li class="man"><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__profile">
+      <div class="items__buy">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <use href="./images/icon-cart.svg#icon-cart"></use>
+        </svg>
+        <div class="items__buy__number">1</div>
+      </div>
+      <img src="./images/image-avatar.png" alt="avatar">
+    </div>
+    <div class="header__card__info">
+      <h3>Cart</h3>
+      <hr>
+      <div class="header__card__info__main">
+        <figure>
+          <img src="./images/image-product-1.jpg" alt="img-main"> <!-- width 52 height 51-->
+          <figcaption>
+            Fall Limited Edition Sneakers 
+            $125.00 x 3<span>375$</span>
+          </figcaption>  <!-- width 210 height 44-->
+        </figure>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill:grey">
+          <use href="./images/icon-delete.svg#icon-delete"></use> 
+        </svg>
+      </div>     
+      <button>Checkout</button>
+    </div>
+  </header>
+  <main>
+    <div class="description">
+      <div class="description__items">       
+        <img src="./images/image-product-1.jpg" alt="img-main">
+        <div class="description__items__item">
+          <img src="./images/image-product-1.jpg" alt="product1">
+          <img src="./images/image-product-2.jpg" alt="product2">
+          <img src="./images/image-product-3.jpg" alt="product2">
+          <img src="./images/image-product-4.jpg" alt="product2">
+        </div>
+      </div>    
+      <div class="description__detail">
+        <div class="description__detail__info">
+          <h4>Sneaker Company</h4>
+          <h1>Fall Limited Edition<br>Sneakers</h1>
+          <h5>These low-profile sneakers are your perfect casual wear <br> companion. Featuring a 
+            durable rubber outer sole, they’ll <br> withstand everything the weather can offer.
+          </h5>
+        </div>  
+        <div class="description__detail__price">
+            <div class="description__detail__price__discount">
+              <h2 class="price__sale">$125.00</h2>
+              <h3 class="price__discount">50%</h3>                 
+            </div>
+            <h3 class="price__initial">$250.00</h3>
+        </div>
+        <div class="description__detail__buy">
+          <div class="description__detail__buy__itemCount">
+            <svg id="icon-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use href="./images/icon-minus.svg#icon-minus"></use>
+            </svg>
+            <input type="text" value="1" class="description__detail__buy__itemCount__number">
+            <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <use href="./images/icon-plus.svg#icon-plus"></use>
+            </svg>    
+          </div>
+          <div class="description__detail__buy__item">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <use href="./images/icon-cart.svg#icon-cart"></use>
+            </svg>
+            <span>Add to cart</span>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
